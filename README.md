@@ -1,11 +1,7 @@
 # SIS-Web-Application
 Student Information System 
 
-A web application that manages student information and registration process in the particular course.
-Architecture: ASP.NET MVC 
-IDE used: Visual Studio 2017
-
-MVC Architecture
+A web application that manages student information and registration process in the particular course in Visual Studio 2017 using MVC architecture.
 
 ## Build With
 * [SQL SERVER MANAGEMEMT STUDIO](https://www.tutorialspoint.com/ms_sql_server/index.htm)
