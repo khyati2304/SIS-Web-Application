@@ -1,0 +1,51 @@
+﻿@model IEnumerable<S2G7_SISAPP.Models.Professor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Prof_First_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prof_Last_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prof_Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prof_Desc)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prof_First_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prof_Last_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prof_Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prof_Desc)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Prof_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Prof_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Prof_ID })
+        </td>
+    </tr>
+}
+
+</table>

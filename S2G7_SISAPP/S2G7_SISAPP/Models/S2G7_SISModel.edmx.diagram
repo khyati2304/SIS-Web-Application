@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e8cb28ddc54d4ad3a162f70dbe18ef32" Name="Diagram1">
+        <EntityTypeShape EntityType="S2G7_SISDBModel.Cours" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="S2G7_SISDBModel.Department" Width="1.5" PointX="1.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="S2G7_SISDBModel.Professor" Width="1.5" PointX="3.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="S2G7_SISDBModel.Registration" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="S2G7_SISDBModel.Student" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="S2G7_SISDBModel.StudyTerm" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="S2G7_SISDBModel.TeachingAssignment" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="S2G7_SISDBModel.FK__Courses__Dept_ID__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="S2G7_SISDBModel.FK__Registrat__Cours__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="S2G7_SISDBModel.FK__TeachingA__Cours__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="S2G7_SISDBModel.FK__TeachingA__Prof___4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="S2G7_SISDBModel.FK__Registrat__Stude__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="S2G7_SISDBModel.FK__Registrat__Term___47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="S2G7_SISDBModel.FK__TeachingA__Term___4F7CD00D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,50 @@
+﻿@model S2G7_SISAPP.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Enrollment_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_Enrollment_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student_Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student_Phone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Student_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

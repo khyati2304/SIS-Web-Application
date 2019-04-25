@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="S2G7_SISDBModelStoreContainer" CdmEntityContainer="S2G7_SISDBEntities">
+    <EntitySetMapping Name="Courses">
+      <EntityTypeMapping TypeName="S2G7_SISDBModel.Cours">
+        <MappingFragment StoreEntitySet="Courses">
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="Course_Name" ColumnName="Course_Name" />
+          <ScalarProperty Name="Course_Info" ColumnName="Course_Info" />
+          <ScalarProperty Name="Dept_ID" ColumnName="Dept_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="S2G7_SISDBModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Dept_ID" ColumnName="Dept_ID" />
+          <ScalarProperty Name="Dept_Name" ColumnName="Dept_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Professors">
+      <EntityTypeMapping TypeName="S2G7_SISDBModel.Professor">
+        <MappingFragment StoreEntitySet="Professor">
+          <ScalarProperty Name="Prof_ID" ColumnName="Prof_ID" />
+          <ScalarProperty Name="Prof_First_Name" ColumnName="Prof_First_Name" />
+          <ScalarProperty Name="Prof_Last_Name" ColumnName="Prof_Last_Name" />
+          <ScalarProperty Name="Prof_Phone" ColumnName="Prof_Phone" />
+          <ScalarProperty Name="Prof_Desc" ColumnName="Prof_Desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registrations">
+      <EntityTypeMapping TypeName="S2G7_SISDBModel.Registration">
+        <MappingFragment StoreEntitySet="Registration">
+          <ScalarProperty Name="Registration_ID" ColumnName="Registration_ID" />
+          <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="Term_ID" ColumnName="Term_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="S2G7_SISDBModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="Student_ID" ColumnName="Student_ID" />
+          <ScalarProperty Name="Student_First_Name" ColumnName="Student_First_Name" />
+          <ScalarProperty Name="Student_Last_Name" ColumnName="Student_Last_Name" />
+          <ScalarProperty Name="Student_Enrollment_ID" ColumnName="Student_Enrollment_ID" />
+          <ScalarProperty Name="Student_Phone" ColumnName="Student_Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudyTerms">
+      <EntityTypeMapping TypeName="S2G7_SISDBModel.StudyTerm">
+        <MappingFragment StoreEntitySet="StudyTerms">
+          <ScalarProperty Name="Term_ID" ColumnName="Term_ID" />
+          <ScalarProperty Name="Term_Name" ColumnName="Term_Name" />
+          <ScalarProperty Name="Term_Start_Date" ColumnName="Term_Start_Date" />
+          <ScalarProperty Name="Term_End_Date" ColumnName="Term_End_Date" />
+          <ScalarProperty Name="Term_Season" ColumnName="Term_Season" />
+          <ScalarProperty Name="Term_Year" ColumnName="Term_Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeachingAssignments">
+      <EntityTypeMapping TypeName="S2G7_SISDBModel.TeachingAssignment">
+        <MappingFragment StoreEntitySet="TeachingAssignment">
+          <ScalarProperty Name="TA_ID" ColumnName="TA_ID" />
+          <ScalarProperty Name="Prof_ID" ColumnName="Prof_ID" />
+          <ScalarProperty Name="Course_ID" ColumnName="Course_ID" />
+          <ScalarProperty Name="Term_ID" ColumnName="Term_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
