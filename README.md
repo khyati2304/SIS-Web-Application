@@ -3,6 +3,8 @@ Student Information System
 
 A web application that manages student information and registration process in the particular course in Visual Studio 2017 using [MVC](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm) architecture.
 
+This README outlines the details of collaborating on this SIS Web application. A short introduction of this app could easily go here.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
